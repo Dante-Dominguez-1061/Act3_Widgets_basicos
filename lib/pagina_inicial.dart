@@ -7,7 +7,7 @@ class PantallaUno extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue, // Fondo azul del AppBar
+        backgroundColor: Colors.red, // Fondo azul del AppBar
         title: const Center(
           // Centra el texto
           child: Text(
@@ -35,6 +35,38 @@ class PantallaUno extends StatelessWidget {
                 Navigator.pushNamed(context, '/pantalla3');
               },
               child: const Text('Pantalla Tres'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla4');
+              },
+              child: const Text('Pantalla Cuatro'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla5');
+              },
+              child: const Text('Pantalla Cinco'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla6');
+              },
+              child: const Text('Pantalla Seis'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla7');
+              },
+              child: const Text('Pantalla Siete'),
             ),
           ),
         ],
